@@ -227,7 +227,6 @@ include 'controller/generalController.php';
 											if ($result) {
 												$numColumns = mysqli_num_fields($result);
 												$columnsInfo = mysqli_fetch_fields($result);
-												echo $numColumns;
 												for ($i = 2; $i < $numColumns; $i++) {
 													if ($columnsInfo[$i]->name == 'doc') {
 														$office = 'Dean of College';
