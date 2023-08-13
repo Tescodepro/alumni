@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 13, 2023 at 08:49 AM
+-- Generation Time: Aug 13, 2023 at 09:24 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.1.17
 
@@ -92,7 +92,20 @@ CREATE TABLE `departments` (
 
 INSERT INTO `departments` (`id`, `name`) VALUES
 (1, 'Department of Mathematics and Computer Science'),
-(2, 'Department of Mass Communication');
+(2, 'Department of Mass Communication'),
+(3, 'Biochemistry'),
+(4, 'Microbiology'),
+(5, 'Economics'),
+(6, 'Polical Science'),
+(7, 'Accounting'),
+(8, 'Business Administration'),
+(9, 'Banking and Finance'),
+(10, 'Chemistry'),
+(11, 'Physics'),
+(12, 'Arabic'),
+(13, 'Islamic Studies'),
+(14, 'English and Literary Studies'),
+(15, 'History and Diplomatic Studies');
 
 -- --------------------------------------------------------
 
@@ -105,8 +118,8 @@ CREATE TABLE `lecturer_users` (
   `office_code` varchar(100) NOT NULL,
   `name` varchar(250) DEFAULT NULL,
   `phone` varchar(250) DEFAULT NULL,
-  `college_id` varchar(11) DEFAULT NULL,
-  `department_id` varchar(11) DEFAULT NULL,
+  `college_id` varchar(11) DEFAULT '0',
+  `department_id` varchar(11) DEFAULT '0',
   `email` varchar(250) NOT NULL,
   `password` varchar(1000) NOT NULL,
   `changed_password` int(11) NOT NULL DEFAULT 0
@@ -117,9 +130,19 @@ CREATE TABLE `lecturer_users` (
 --
 
 INSERT INTO `lecturer_users` (`id`, `office_code`, `name`, `phone`, `college_id`, `department_id`, `email`, `password`, `changed_password`) VALUES
-(1, 'registry', 'Kaseem', '+2347089674534', NULL, NULL, 'register@summituniversity.edu.ng', '12345', 0),
-(2, 'doc', 'A O Murana', '09078675645', '1', '1', 'mutiulahi.tesleem@summituniversity.edu.ng', '123456', 0),
-(3, 'hod', 'Olatunde Yusuff', '09089786756', '1', '2', 'olatunde.yusuf@summituniversity.edu.ng', '12345', 0);
+(1, 'registry', 'Kaseem', '+2347089674534', '0', '0', 'register@summituniversity.edu.ng', '12345', 0),
+(2, 'doc', 'A O Murana', '09078675645', '1', '1', 'ao.murana@summituniversity.edu.ng', '12345', 0),
+(3, 'hod', 'Olatunde Yusuff', '09089786756', '1', '1', 'olatunde.yusuf@summituniversity.edu.ng', '12345', 0),
+(4, 'dsa', 'Dr Ganiyu Adebayo Zubair', '08064434397', '0', '0', 'ganiyu.adebayo@summituniversity.edu.ng', '12345', 0),
+(5, 'library', 'Mr. Ayo Salami ', '08061119976', '0', '0', 'salam@summituniversity.edu.ng', '12345', 0),
+(6, 'bursary', 'Mr Abdulraheem ', '+234 803 238 1807', '0', '0', 'bursar@summituniversity.edu.ng', '12345', 0),
+(7, 'works', 'Engr. Shamsudeen', '+234 803 433 5679', '0', '0', 'shamsudeen@summituniversity.edu.ng', '12345', 0),
+(8, 'riu', 'Mrs Mutiat Mohammad', '+234 806 558 7196', '0', '0', 'mojworld35@gmail.com', '12345', 0),
+(9, 'sport', 'Dr Mustapha Sanbe', '+234 802 342 1891', '0', '0', 'mustapha.sanbe@summituniversity.edu.ng', '12345', 0),
+(14, 'clinic', 'Dr. Clinic', '+23470000000', '0', '0', 'clinic@summituniversity.edu.ng', '12345', 0),
+(15, 'laboratory', 'Adepoju Ismaheel', '+234 815 916 5561', '1', '1', 'adepoju.ismaheel@summituniversity.edu.ng', '12345', 0),
+(16, 'laboratory', 'Ola-williams', '+234 909 132 5290', '1', '3', 'olawilliams@gmail.com', '12345', 0),
+(17, 'laboratory', 'Ola-williams', '+234 909 132 5290', '1', '4', 'olawilliams1@gmail.com', '12345', 0);
 
 -- --------------------------------------------------------
 
@@ -246,13 +269,13 @@ ALTER TABLE `colleges`
 -- AUTO_INCREMENT for table `departments`
 --
 ALTER TABLE `departments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `lecturer_users`
 --
 ALTER TABLE `lecturer_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `transactions`
