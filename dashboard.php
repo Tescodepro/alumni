@@ -329,34 +329,30 @@ include 'controller/generalController.php';
 					});
 				</script>
 
-				<!-- Required vendors -->
-				<script src="vendor/global/global.min.js"></script>
-				<script src="vendor/chart.js/Chart.bundle.min.js"></script>
-				<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+			<script src="vendors/global/global.min.js"></script>
+			<script src="vendors/chart.js/Chart.bundle.min.js"></script>
+			<script src="vendors/jquery-nice-select/js/jquery.nice-select.min.js"></script>
 
-				<!-- Apex Chart -->
-				<script src="vendor/apexchart/apexchart.js"></script>
+			<!-- Apex Chart -->
+			<script src="vendors/apexchart/apexchart.js"></script>
 
-				<!-- Chart piety plugin files -->
-				<script src="vendor/peity/jquery.peity.min.js"></script>
+			<!-- Chart piety plugin files -->
+			<script src="vendors/peity/jquery.peity.min.js"></script>
 
-				<!-- Dashboard 1 -->
-				<script src="js/dashboard/dashboard-1.js"></script>
+			<!-- Dashboard 1 -->
+			<script src="js/dashboard/dashboard-1.js"></script>
 
-				<!-- JS for dotted map -->
-				<script src="vendor/dotted-map/js/contrib/jquery.smallipop-0.3.0.min.js"></script>
-				<script src="vendor/dotted-map/js/contrib/suntimes.js"></script>
-				<script src="vendor/dotted-map/js/contrib/color-0.4.1.js"></script>
+			<!-- JS for dotted map -->
+			<script src="vendors/dotted-map/js/contrib/jquery.smallipop-0.3.0.min.js"></script>
+			<script src="vendors/dotted-map/js/contrib/suntimes.js"></script>
+			<script src="vendors/dotted-map/js/contrib/color-0.4.1.js"></script>
 
-				<script src="vendor/dotted-map/js/world.js"></script>
-				<script src="vendor/dotted-map/js/smallimap.js"></script>
-				<script src="js/dashboard/dotted-map-init.js"></script>
+			<script src="vendors/dotted-map/js/world.js"></script>
+			<script src="vendors/dotted-map/js/smallimap.js"></script>
+			<script src="js/dashboard/dotted-map-init.js"></script>
 
-
-
-				<script src="js/custom.min.js"></script>
-				<script src="js/deznav-init.js"></script>
-				<script src="js/demo.js"></script>
+			<script src="js/custom.min.js"></script>
+			<script src="js/deznav-init.js"></script>
 </body>
 
 </html>
